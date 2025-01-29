@@ -1,0 +1,102 @@
+/* Write CSS code here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 35px;
+    min-height: 100vh;
+    background: linear-gradient( rgb(255, 192, 211), rgb(255,20,98));
+}
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;   
+}
+.wrapper i{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.384);
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    line-height: 50px;
+    transition: transform 0.1s linear 0s;
+}
+#left{
+    left: -22px;
+}
+#right{
+   right:-22px;
+}
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(33.3333% - 12px);
+    overflow-x: auto;
+    scroll-snap-type-x: mandatory;
+    gap: 16px;
+    border-radius: 12px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.card, .img{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.card{
+    scroll-snap-align: start;
+    height: 400px;
+    list-style: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 12px
+}
+.img{
+    background-color: beige;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.img img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px black solid;
+}
+.card h2{
+    font-weight: 500;
+    font-size: 22px;
+    margin-top:  30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+span{
+    color: rgb(13, 13, 221);
+    font-size: 18px;
+}
+
+/* Responsivness */
+.wrapper i:active{
+    transform: translateY(-50) scale(0.85);
+}
+@media screen and (max-width:900px){
+    .wrapper .carousel{
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}

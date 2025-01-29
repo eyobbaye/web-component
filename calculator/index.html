@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="caculator">
+
+    <input id="display" readonly>
+    <!-- <div id="hide-button-container">
+        <button id="hide-button">Hide</button>
+    </div> -->
+    <div id="trignometric-key">
+        <text onclick="appendToDisplay('√')">√</text>
+        <text onclick="appendToDisplay('3.14')">π</text>
+        <text onclick="appendToDisplay('²')">x<sup>2</sup></text>
+        <text onclick="appendToDisplay('!')">!</text>
+        <button onclick="hideShow()" id="hide-button" class="hide">Hide</button>
+     </div>
+          <div id="trignometric-key-second" class="">
+            <text onclick="appendToDisplay('°')">°</text>
+            <text onclick="appendToDisplay('INV')">INV</text>
+            <button value="sin" onclick="sin()">sin</button>
+            <text onclick="appendToDisplay('cos')">cos</text>
+            <text onclick="appendToDisplay('tan')">tan</text>
+            <text onclick="appendToDisplay('e')">e</text>
+            <text onclick="appendToDisplay('ln')">ln</text>
+            <text onclick="appendToDisplay('log')">log</text>
+        </div>
+    <div id="key">
+        <button onclick="clearDisplay('AC')" class="clear-btn">AC</button>
+        <button onclick="appendToDisplay('(' && ')')" class="operator-btn">( )</button>
+        <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
+        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+        <button onclick="appendToDisplay('7')" >7</button>
+        <button onclick="appendToDisplay('8')" >8</button>
+        <button onclick="appendToDisplay('9')" >9</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn">X</button>
+        <button onclick="appendToDisplay('4')" >4</button>
+        <button onclick="appendToDisplay('5')" >5</button>
+        <button onclick="appendToDisplay('6')" >6</button>
+        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToClear('X')">x</button>
+        <button onclick="calculate('=')" class="operator-btn">=</button>
+    </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>

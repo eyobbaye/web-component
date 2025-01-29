@@ -1,0 +1,34 @@
+/* Write CSS code here */
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: darkgray;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stopwatch-container{
+    text-align: center;
+}
+#stopwatch{
+    font-size: 48px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: rgb(236, 135, 11);
+    background-color: aliceblue;
+    
+    
+}
+.buttons button{
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgb(68, 57, 223);
+    color: white;
+}
+.buttons button:hover{
+    background-color: black;
+    color: aliceblue;
+}

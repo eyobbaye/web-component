@@ -1,0 +1,44 @@
+/* Write CSS code here */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.911);
+    font-family: serif;
+}
+.calculator{
+    /* max-width: 300px; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#display{
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    text-align: right;
+    background-color: rgb(241, 241, 239);
+    color: #444;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* gap: 10px; */
+}
+.btn{
+   font-size: 20px;
+   padding: 20px;
+   border: 1px solid cornsilk;
+   background-color: rgba(173, 175, 177, 0.219);
+   cursor: pointer;
+   color: wheat;
+}
+.equal{
+    grid-column: span 2;
+    background-color: rgba(175, 20, 20, 0.918);
+}
+.btn:hover{
+    opacity: 0.8;
+}
+

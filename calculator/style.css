@@ -1,0 +1,93 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#caculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 900px;
+    overflow: hidden;
+   
+}
+#trignometric-key{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+   
+    
+}
+#trignometric-key-second{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+text{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+#key{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+
+}
+
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 35%);
+}
+button:active{
+    background-color: hsl(0, 0%, 40%);
+}
+#display{
+   width: 100%;
+   padding: 30px;
+   border: none;
+   font-size: 15px;
+   background-color: hsl(0, 0%, 40%);
+   color: white;
+}
+.clear-btn{
+background-color: hsl(78, 96%, 49%);
+}
+.clear-btn:hover{
+background-color: hsl(78, 96%, 59%);
+}
+.clear-btn:active{
+background-color: hsl(78, 96%, 79%);
+
+}
+.operator-btn{
+    background-color: hsl(38, 89%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(38, 89%, 45%);
+
+}
+.operator-btn:active{
+    background-color: hsl(38, 89%, 60%);
+
+}
