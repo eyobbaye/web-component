@@ -88,6 +88,7 @@ aside .sidbar {
   top: 3rem;
   position: relative;
   border-radius: 5px;
+  transition: width 0.3s ease-in-out;
 }
 aside h3 {
   /* font-weight: 500; */
@@ -109,6 +110,10 @@ aside .sidbar a span {
   font-size: 1.6rem;
   transition: all 0.3s ease-in-out;
 }
+.sidbar a {
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
 .sidbar a:hover {
   background: var(--color-light);
   color: var(--color-priamary);
@@ -118,23 +123,19 @@ aside .sidbar a span {
 .sidbar a:hover span {
   margin-right: 1rem;
 }
-.sidbar a:active {
+.sidbar a:focus {
   background: var(--color-light);
   color: var(--color-priamary);
 }
-.sidbar a:active::before {
+.sidbar a:focus:before {
   content: "";
   width: 6px;
   height: 100%;
   background: var(--color-priamary);
 }
-/* .active {
-  background-color: var(--color-light);
-  color: var(--color-priamary);
-  margin-left: 0;
-} */
 
 iframe {
+  display: block;
   scrollbar-width: none !important;
   flex-grow: 1;
   margin-left: 15rem;
