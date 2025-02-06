@@ -66,6 +66,7 @@ h3 {
 
 aside {
   height: 100vh;
+  position: fixed;
 }
 aside .logo {
   display: flex;
@@ -86,17 +87,64 @@ aside .sidbar {
   height: 86vh;
   top: 3rem;
   position: relative;
+  border-radius: 5px;
 }
 aside h3 {
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: bold;
 }
 
 aside .sidbar a {
   display: flex;
+  align-items: center;
   margin-left: 2rem;
   color: var(--color-info-dark-dark);
   gap: 1rem;
   position: relative;
   height: 3.7rem;
   transition: all 0.3s ease;
+}
+
+aside .sidbar a span {
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+.sidbar a:hover {
+  background: var(--color-light);
+  color: var(--color-priamary);
+  margin-left: 1px;
+  border-radius: 3px;
+}
+.sidbar a:hover span {
+  margin-right: 1rem;
+}
+.sidbar a:active {
+  background: var(--color-light);
+  color: var(--color-priamary);
+}
+.sidbar a:active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: var(--color-priamary);
+}
+/* .active {
+  background-color: var(--color-light);
+  color: var(--color-priamary);
+  margin-left: 0;
+} */
+
+iframe {
+  scrollbar-width: none !important;
+  flex-grow: 1;
+  margin-left: 15rem;
+  border: none !important;
+  overlay: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#Iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

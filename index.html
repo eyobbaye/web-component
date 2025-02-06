@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="./home/style.css" rel="stylesheet" />
     <!---Material Icons-->
     <link
       rel="stylesheet"
@@ -25,16 +25,16 @@
             <span><ion-icon name="close"></ion-icon></span>
           </div>
         </div>
-        <div class="sidbar">
+        <div class="sidbar" id="sidbar">
           <a>
-            <span><ion-icon name="home"></ion-icon></span>
+            <span><ion-icon name="home"></ion-icon> </span>
             <h3>Dashboard</h3>
           </a>
-          <a
+          <a href="../calculator/" target="framename" class="active"
             ><span><ion-icon name="calculator"></ion-icon></span>
             <h3>Calculator</h3></a
           >
-          <a
+          <a href="../dash_board/dash_board/" target="framename"
             ><span><ion-icon name="grid"></ion-icon> </span>
             <h3>Admin Dashboard</h3>
           </a>
@@ -46,39 +46,42 @@
             ><span> <ion-icon name="game-controller"></ion-icon></span>
             <h3>Guess my No.</h3></a
           >
-          <a
+          <a href="../image accordion/" target="framename"
             ><span> <ion-icon name="images"></ion-icon> </span>
             <h3>image Accordion</h3></a
           >
-          <a
+          <a href="../Image slider/" target="framename"
             ><span> <ion-icon name="image"></ion-icon></span>
             <h3>Image Slider</h3></a
           >
-          <a
-            ><span> <ion-icon name="log-in"></ion-icon></span>
+          <a href="../netflix login page/" target="framename"
+            ><span> <ion-icon name="log-in"></ion-icon> </span>
             <h3>Netflix Login</h3>
           </a>
 
-          <a
-            ><span> <ion-icon name="person"></ion-icon> </span>Profile Card</a
+          <a href="../Profile Card/" target="framename"
+            ><span> <ion-icon name="person"></ion-icon> </span>
+            <h3>Profile Card</h3></a
           >
-          <a
+          <a href="../Stop Watch/" target="framename"
             ><span> <ion-icon name="hourglass"></ion-icon> </span>
             <h3>Stop Watch</h3></a
           >
-          <a
+          <a href="../youtube video player/" target="framename"
             ><span> <ion-icon name="logo-youtube"></ion-icon> </span>
             <h3>Youtube Video Player</h3>
           </a>
         </div>
       </aside>
       <!-- End-of-side -->
-      <main>
-        <div class="date">
-          <h4 id="current-date">date</h4>
-        </div>
-      </main>
+      <iframe
+        src="URL"
+        name="framename"
+        id="Iframe"
+        style="width: 80vw; height: 100vh"
+      ></iframe>
     </div>
+    <script type="text/javascript" src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
