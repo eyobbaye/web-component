@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <meta
       name="description"
       content="Web component devlepoed with HTML, CSS and JS"
@@ -24,76 +28,57 @@
     <title>Web component</title>
   </head>
   <body>
-    <div class="container">
-      <aside>
-        <div class="top">
-          <div class="logo">
-            <h2>
-              <span>Web Componenet</span>
-            </h2>
-          </div>
-          <div class="close" id="close-btn">
-            <span><ion-icon name="close"></ion-icon></span>
-          </div>
-          <div class="menu">
-            <span><ion-icon name="menu"></ion-icon></span>
-          </div>
-        </div>
-        <div class="sidbar" id="sidbar">
-          <a>
-            <span><ion-icon name="home"></ion-icon> </span>
-            <h3>Dashboard</h3>
-          </a>
-          <a href="../calculator/" target="framename" class="active"
-            ><span><ion-icon name="calculator"></ion-icon></span>
-            <h3>Calculator</h3></a
-          >
-          <a href="../dash_board/dash_board/" target="framename"
-            ><span><ion-icon name="grid"></ion-icon> </span>
-            <h3>Admin Dashboard</h3>
-          </a>
-          <a
-            ><span><ion-icon name="document-attach"></ion-icon> </span>
-            <h3>File Merge</h3></a
-          >
-          <a
-            ><span> <ion-icon name="game-controller"></ion-icon></span>
-            <h3>Guess my No.</h3></a
-          >
-          <a href="../image accordion/" target="framename"
-            ><span> <ion-icon name="images"></ion-icon> </span>
-            <h3>image Accordion</h3></a
-          >
-          <a href="../Image slider/" target="framename"
-            ><span> <ion-icon name="image"></ion-icon></span>
-            <h3>Image Slider</h3></a
-          >
-          <a href="../netflix login page/" target="framename"
-            ><span> <ion-icon name="log-in"></ion-icon> </span>
-            <h3>Netflix Login</h3>
-          </a>
+    <div class="sidebar">
+      <div class="toggle-btn">
+        <ion-icon class="toggle-btn" name="menu"></ion-icon>
+      </div>
+      <nav class="menu">
+        <a href="./calculator/index.html" class="menu-item active">
+          <span class="icon"><ion-icon name="calculator"></span>
+          <span class="text">Calculator</span>
+        </a>
+        <a href="./dash_board/dash_board/index.html" class="menu-item">
+          <span class="icon"><ion-icon name="apps"></ion-icon></span>
+          <span class="text">Dashboard</span>
+        </a>
+        <a href="./image accordion/index.html" class="menu-item">
+          <span class="icon"><ion-icon name="images"></ion-icon></span>
+          <span class="text">Image-Accordion</span>
+        </a>
+        <a href="./Image slider/index.html" class="menu-item">
+          <span class="icon"><ion-icon name="image"></ion-icon></span>
+          <span class="text">Image-Slider</span>
+        </a>
+        <a href="./netflix login page/index.html" class="menu-item">
+          <span class="icon">
+            <ion-icon name="log-in"></ion-icon>
+          </span>
+          <span class="text">Netflix Login</span>
 
-          <a href="../Profile Card/" target="framename"
-            ><span> <ion-icon name="person"></ion-icon> </span>
-            <h3>Profile Card</h3></a
-          >
-          <a href="../Stop Watch/" target="framename"
-            ><span> <ion-icon name="hourglass"></ion-icon> </span>
-            <h3>Stop Watch</h3></a
-          >
-          <a href="../youtube video player/" target="framename"
-            ><span> <ion-icon name="logo-youtube"></ion-icon> </span>
-            <h3>Youtube Video Player</h3>
-          </a>
-        </div>
-      </aside>
-      <!-- End-of-side -->
-      <iframe
-        src="URL"
-        name="framename"
-        id="Iframe"
-        style="width: 80vw; height: 100vh"
-      ></iframe>
+        </a>
+        <a href="./Profile Card/index.html" class="menu-item">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <span class="text"> Profile Card</span>
+        </a>
+        <a href="./Stop Watch/index.html" class="menu-item">
+          <span class="icon">
+           <ion-icon name="stopwatch"></ion-icon>
+          </span>
+          <span class="text"> Stop Watch</span>
+        </a>
+        <a href="./youtube video player/index.html" class="menu-item">
+          <span class="icon">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </span>
+          <span class="text"> YouTube Video Player</span>
+
+        </a>
+      </nav>
+    </div>
+    <div class="content">
+      <iframe id="contentFrame" src="./home/index.html"></iframe>
     </div>
     <script type="text/javascript" src="./home/script.js"></script>
     <script
