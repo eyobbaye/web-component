@@ -1,34 +1,72 @@
-const displa = document.getElementById('display');
-// const hideButton = document.getElementById('hide-button');
-const trignometricKey = document.getElementById('trignometric-key-second');
-let display= 0;
-// hideButton.addEventListener('click', function() {
-    
-//   trignometricKey.classList.toggle('hidden');  // Toggles "hidden" class on click
-// 
-function hideShow() {
-    if (display == 0) {
-        trignometricKey.style.display = 'none'
-        display = 1
-    }else{
-        trignometricKey.style.display = 'grid'
-        display = 0
-    }
+const display = document.getElementById("display");
+const trignometricKey = document.getElementById("trignometric-key-second");
+let displayVisible = 0;
 
+function hideShow() {
+  if (displayVisible == 0) {
+    trignometricKey.style.display = "none";
+    displayVisible = 1;
+  } else {
+    trignometricKey.style.display = "grid";
+    displayVisible = 0;
+  }
 }
 
 function appendToDisplay(value) {
-    displa.value +=value
+  display.value += value;
 }
 
 function calculate(value) {
-    displa.value = eval(displa.value)
-    
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
 }
 
 function clearDisplay() {
-    displa.value = "";
+  display.value = "";
 }
-function sin(){
-    document.caculator.result.value= Math.sin(document.result.value)
+
+function sin() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.sin(value);
+  } else {
+    display.value = "Error";
+  }
+}
+function tan() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.tan(value);
+  } else {
+    display.value = "Error: Invalid value";
+  }
+}
+
+function cos() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.cos(value);
+  } else {
+    display.value = "Error: Invalid value";
+  }
+}
+
+function logs() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.log10(value);
+  } else {
+    display.value = "Error: Invalid value";
+  }
+}
+function squareRoot() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.sqrt(value);
+  } else {
+    display.value = "Error: Invalid square root value";
+  }
 }
