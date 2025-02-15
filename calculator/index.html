@@ -11,8 +11,8 @@
       <input id="display" readonly />
       <div id="trignometric-key">
         <button onclick="squareRoot('√')">√</button>
-        <button onclick="appendToDisplay('3.14')">π</button>
-        <button onclick="appendToDisplay('²')">x<sup>2</sup></button>
+        <button onclick="appendToDisplay('3.14159265359')">π</button>
+        <button onclick="square('²')">x<sup>2</sup></button>
         <button onclick="appendToDisplay('!')">!</button>
         <button onclick="hideShow()" id="hide-button" class="hide">Hide</button>
       </div>
@@ -23,7 +23,7 @@
         <button value="cos" onclick="cos('cos')">cos</button>
         <button value="tan" onclick="tan('tan')">tan</button>
         <button value="e" onclick="appendToDisplay('e')">e</button>
-        <button value="ln" onclick="appendToDisplay('ln')">ln</button>
+        <button value="ln" onclick="ln('ln')">ln</button>
         <button value="log" onclick="logs('log')">log</button>
       </div>
       <div id="key">
@@ -37,7 +37,7 @@
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')" class="operator-btn">X</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
         <button onclick="appendToDisplay('4')">4</button>
         <button onclick="appendToDisplay('5')">5</button>
         <button onclick="appendToDisplay('6')">6</button>
@@ -48,7 +48,7 @@
         <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="appendToClear('X')">x</button>
+        <button value="x" onclick="appendToClear('←')">←</button>
         <button onclick="calculate('=')" class="operator-btn">=</button>
       </div>
     </div>

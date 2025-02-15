@@ -70,3 +70,25 @@ function squareRoot() {
     display.value = "Error: Invalid square root value";
   }
 }
+
+function ln() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = Math.log(value);
+  } else {
+    display.value = "Error: Invalid";
+  }
+}
+
+function appendToClear() {
+  display.value = display.value.slice(0, -1);
+}
+
+function square() {
+  const value = parseFloat(display.value);
+  if (!isNaN(value)) {
+    display.value = display.value * display.value;
+  } else {
+    display.value = "Error invalid";
+  }
+}
