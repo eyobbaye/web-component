@@ -44,7 +44,7 @@ Web Component/
 3. Open `index.html` in your browser or use a live server extension in VS Code.
 
 ## 🎨 Demo
-[Live Demo](#) – _(Add a link if hosted online)_
+[Live Demo](#) – 
 
 ## 🤝 Contributing
 Contributions are welcome! If you’d like to improve or add new components, feel free to fork the repo and create a pull request.
@@ -55,7 +55,7 @@ This project is open-source and available under the **MIT License**.
 ---
 ### 🔗 Connect with Me
 📧 Email: eyob.bay@gmail.com  
-💼 LinkedIn: [https://www.linkedin.com/in/eyob-baye/](#)  
+💼 LinkedIn: [https://www.linkedin.com/in/eyob-baye/](#) - 
 
 ---
 _⭐ If you like this project, give it a star on GitHub!_
